@@ -1,8 +1,16 @@
 # Main,py
 
 from vehiclePackage.vehicleClass import *
+from vehiclePackage.hybrid import *
 
 if __name__ == "__main__":
+    # Instantiate an object of type Hybrid
+    myPrius = Hybrid("Hybrid", "Toyota", "Prius", 220)
+    # Invoke the print type method using the hybrid object we just created
+    myPrius.printType()
+    
+    
+    '''
     # Let's instantiate an object of type Vehicle
     myCorvette = Vehicle("Car", 120) # Trigger a call to the constructor
     myCorvette.printType()      # Invoke the method on the object
@@ -23,3 +31,4 @@ if __name__ == "__main__":
     for vehicle in myVehicles:
         vehicle.printType()
         print(vehicle.getSpeed())
+'''
